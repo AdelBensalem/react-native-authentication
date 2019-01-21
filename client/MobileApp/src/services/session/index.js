@@ -59,6 +59,6 @@ export const revoke = () => {
 		type: session.tokens[tokenKey].type,
 		value: session.tokens[tokenKey].value,
 	})))
-	.then(clearSession())
+	.then(clearSession)
 	.catch(() => {});
 };
